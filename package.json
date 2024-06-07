@@ -1,0 +1,16 @@
+{
+  "name": "api_practise",
+  "version": "1.0.0",
+  "description": "A sample node and express project to practise deploying an API on Render",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jo Pickering",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
