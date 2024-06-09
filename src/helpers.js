@@ -1,6 +1,6 @@
 const dinosaurs = require("./db.js");
 
-const getDinoById = (id) => {
+const getDinoByName = (id) => {
   return dinosaurs.find((dino) => dino.name === name);
 };
 
@@ -14,4 +14,4 @@ function createDino(instance) {
   };
 }
 
-module.exports = { getDinoById, createDino };
+module.exports = { getDinoByName, createDino };

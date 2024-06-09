@@ -1,11 +1,11 @@
 const express = require("express");
 const dinosaurRouter = express.Router();
-const dinosaurs = require("/db.js");
-const getDinoById = require("./utils");
+const dinosaurs = require("./db.js");
+const getDinoByName = require("./helpers");
 
 module.exports = dinosaurRouter;
 
-dinosaurRouterRouter.param("dinoName", (req, res, next, id) => {
+dinosaurRouter.param("dinoName", (req, res, next, name) => {
   const dino = getDinoByName(name);
   if (dino) {
     req.dino = dino;

@@ -63,3 +63,5 @@ const dinosaurs = [
     length: "1.5-2m",
   },
 ];
+
+module.exports = dinosaurs;
