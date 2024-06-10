@@ -2,9 +2,9 @@
   "name": "api_practise",
   "version": "1.0.0",
   "description": "A sample node and express project to practise deploying an API on Render",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jo Pickering",
