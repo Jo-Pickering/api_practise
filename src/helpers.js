@@ -1,16 +1,18 @@
-const dinosaurs = require("./db.js");
+const dinosaurs = require("./db");
 
-const getDinoByName = (id) => {
-  return dinosaurs.find((dino) => dino.name === name);
-};
+function getDinoByName(dinosaurName) {
+  const findDino = dinosaurName;
+  const foundDino = dinosaurs.find((dino) => dino.name === findDino);
+  return foundDino;
+}
 
 function createDino(instance) {
   return {
-    id: dinosaurs.length + 1,
-    name: `{req.body.name}`,
-    period: `{req.body.period}`,
-    location: [`req.body.location`],
-    length: `{req.body.length}`,
+    id: dinosaurs.length + 2,
+    name: instance.name,
+    period: instance.period,
+    location: instance.location,
+    length: instance.length,
   };
 }
 
